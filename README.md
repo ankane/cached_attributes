@@ -20,7 +20,7 @@ product.orders_count        # not cached
 product.cached_orders_count # cached
 ```
 
-Force a re-cache
+Force a re-cache [master]
 
 ```ruby
 product.cache_orders_count!
