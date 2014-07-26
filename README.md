@@ -11,9 +11,19 @@ class Product
   end
 
 end
+```
 
-product = Product.new
-product.cached_orders_count
+Choose when to use the cached value
+
+```ruby
+product.orders_count        # not cached
+product.cached_orders_count # cached
+```
+
+Force a re-cache
+
+```ruby
+product.cache_orders_count!
 ```
 
 ## Installation

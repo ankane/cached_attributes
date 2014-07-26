@@ -22,6 +22,10 @@ module CachedAttributes
           define_method "cached_#{a}" do
             cached_attribute(a)
           end
+
+          define_method "cache_#{a}!" do
+            cache_attribute(a, send(a))
+          end
         end
       end
     end
