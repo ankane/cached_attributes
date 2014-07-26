@@ -34,6 +34,14 @@ Add this line to your application’s Gemfile:
 gem 'cached_attributes'
 ```
 
+Works with any ActiveSupport cache store.  For Rails, `Rails.cache` is used by default.
+
+Set the cache store with:
+
+```ruby
+CachedAttributes.cache = ActiveSupport::Cache::MemoryStore.new
+```
+
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
